@@ -16,8 +16,6 @@ _Teams are assigned in [this spreadsheet](https://docs.google.com/spreadsheets/d
 
 3. (2 minutes) Assign the role of _maintainer_ to one of your team members. They should use this [GitHub classroom invitation](https://classroom.github.com/g/7DYJfpBe) to create a new team and repository for this activity. The other team members should join.
 
-4. (2 minutes) Take a moment and reflect on your experience in the previous step. Record in your shared editor any insights you have learned or any questions that you still have. __Get confirmation from Prof Davis before continuing.__
-
 5. (10 minutes) Assign the role of _contributor_ to one of your team members and help them [Prepare to contribute to a project](prepare-to-contribute-to-a-project.md). Return here when you are done.
 
 6. (2 minutes) Take a moment and reflect on your experience in the previous step. Record in your shared editor any insights you have learned or any questions that you still have. __Get confirmation from Prof Davis before continuing.__
