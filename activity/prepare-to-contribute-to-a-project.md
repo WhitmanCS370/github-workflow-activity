@@ -40,7 +40,7 @@ __Assumptions__
 
 * You have git installed and configured on your machine.
 * You are viewing your personal fork of the team's repository on GitHub.
-* Your team's repository is named our-favorites.
+* Your team's repository is named `github-workflow-XXX`.
 
 __Instructions__
 
@@ -59,7 +59,7 @@ __Instructions__
     ```
 6. Change into the root of your clone.
     ```
-    cd our-favorites
+    cd github-workflow-XXX
     ```
 
 Congratulations, you have cloned your fork to your local machine!
@@ -89,9 +89,9 @@ __Instructions__
     You should see something like this (with YOUR_ACCOUNT and TEAM_ORGANIZATION replaced with actual values).
     ```
     $ git remote -v
-    origin    https://github.com/YOUR_ACCOUNT/our-favorites.git (fetch)
-    origin    https://github.com/YOUR_ACCOUNT/our-favorites.git (push)
-    upstream  https://github.com/TEAM_ORGANIZATION/our-favorites.git (fetch)
-    upstream  https://github.com/TEAM_ORGANIZATION/our-favorites.git (push)
+    origin    https://github.com/YOUR_ACCOUNT/github-workflow-XXX.git (fetch)
+    origin    https://github.com/YOUR_ACCOUNT/github-workflow-XXX.git (push)
+    upstream  https://github.com/TEAM_ORGANIZATION/github-workflow-XXX.git (fetch)
+    upstream  https://github.com/TEAM_ORGANIZATION/github-workflow-XXX.git (push)
     ```
 Congratulations, your local clone now knows where to find the upstream repository (i.e., your team's repository).
