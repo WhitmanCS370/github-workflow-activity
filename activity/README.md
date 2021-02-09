@@ -3,6 +3,7 @@
 ## Form teams of 2-3 persons
 
 We suggest you work with someone who is uses the same operating system as you. 
+
 _Teams are assigned in [this spreadsheet](https://docs.google.com/spreadsheets/d/1vBWP3on0b3NWF_Vso_Qk18I8pmlWPhW2rvgHwR1BD04/edit?usp=sharing)._
 
 ## Instructions
