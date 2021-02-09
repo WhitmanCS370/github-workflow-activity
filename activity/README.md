@@ -19,7 +19,7 @@ _Teams are assigned in [this spreadsheet](https://docs.google.com/spreadsheets/d
 
 2. (1 minute) Open [this shared Google Doc to take notes](https://docs.google.com/document/d/1nmXnHzB3lVCibH7GBOUqPDiIjG7x67VOqJcoT3seRwQ/edit?usp=sharing).
 
-3. (2 minutes) Assign the role of _maintainer_ to one of your team members. They should use this [GitHub classroom invitation](https://classroom.github.com/g/7DYJfpBe) to create a new team and repository for this activity. The other team members should join.
+3. (2 minutes) Assign the role of _maintainer_ to one of your team members. They should use this [GitHub classroom invitation](https://classroom.github.com/g/7DYJfpBe) to create a new team and repository for this activity. The other team members should join. **The maintainer should [create a license file](https://docs.github.com/en/github/building-a-strong-community/adding-a-license-to-a-repository) so that the project is not empty and everyone can fork it.**
 
 5. (10 minutes) Assign the role of _contributor_ to one of your team members and help them [Prepare to contribute to a project](prepare-to-contribute-to-a-project.md). Return here when you are done.
 
