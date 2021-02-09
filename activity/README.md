@@ -6,7 +6,6 @@ We suggest you work with someone who is uses the same operating system as you.
 
 ## Instructions
 
-
 1. (2 minutes) Ensure that each of your team members ...
 
     - [ ] Has git installed on their laptop.
@@ -14,7 +13,7 @@ We suggest you work with someone who is uses the same operating system as you.
 
 2. (1 minute) Create and share with your team a shared editor (e.g., Google docs, https://pad.riseup.net/, etc.) for notes.
 
-3. (10 minutes) Assign the role of _maintainer_ to one of your team members and help them [Create an organization and a repository](create-an-organization-and-a-repository.md) for the team. Return here when you are done.
+3. (2 minutes) Assign the role of _maintainer_ to one of your team members. They should use this [GitHub classroom invitation](https://classroom.github.com/g/7DYJfpBe) to create a new team and repository for this activity. The other team members should join.
 
 4. (2 minutes) Take a moment and reflect on your experience in the previous step. Record in your shared editor any insights you have learned or any questions that you still have. __Check in with your facilitator before continuing.__
 
