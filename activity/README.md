@@ -1,5 +1,9 @@
 # GitHub Workflow Activity
 
+## Learning goal
+
+The purpose of this activity is to gain experience with the GitHub workflow, including handling pull requests and merge conflicts.
+
 ## Form teams of 2-3 persons
 
 We suggest you work with someone who is uses the same operating system as you. 
