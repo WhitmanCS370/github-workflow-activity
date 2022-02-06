@@ -6,7 +6,7 @@ In this section you will complete three tasks: find or create and claim an issue
 
 Finding or creating and issue and then claiming it helps prevent developers from working on the same thing at the same time. Also issue provide a place for the community to propose and ideas, prioritize issues, size issues, clarify requirements, and verify bugs. So although this step may feel artificial during the activity, it's important to get in the habit of interacting with the community through the issue tracker before doing a significant amount of work.
 
-A branch as a personal copy of the project within a repository. You will create a branch for every issue you work on. This will allow you to work on more than one feature at same time, allowing you to quickly switch between them, while keep their changes separate until you are ready to merge them. This applies to the master branch as well. The master branch contains the official, current copy of the project. Using feature branches allows master to evolve while you work on your features without interfering with your development; and then, when you are ready, you can update your efforts with changes from master. Again, in this activity you might feel branches are artificial and useless. However, when you are working on more significant issues and with more developers branches become invaluable. So we want to practice the full workflow with these more simplistic tasks so that we know what we are doing when things get more complicated.
+A branch is a personal copy of the project within a repository. You will create a branch for every issue you work on. This will allow you to work on more than one feature at same time, allowing you to quickly switch between them, while keep their changes separate until you are ready to merge them. This applies to the master branch as well. The master branch contains the official, current copy of the project. Using feature branches allows master to evolve while you work on your features without interfering with your development; and then, when you are ready, you can update your efforts with changes from master. Again, in this activity you might feel branches are artificial and useless. However, when you are working on more significant issues and with more developers branches become invaluable. So we want to practice the full workflow with these more simplistic tasks so that we know what we are doing when things get more complicated.
 
 Last, you will open an empty pull-request back to the organization's repository (upstream). Pull-requests provide a place for developers to discuss their solution design and implementation. By opening a pull-request immediately, you make your efforts visible from the very beginning, allowing others to track progress and provide useful feedback. Getting feedback early may help you avoid pitfalls and will more likely lead to an acceptable solution sooner and with less effort than if you wait until you are "done" to get feedback.
 
@@ -92,11 +92,10 @@ __Assumptions__
 __Instructions__
 
 1. [Fetch changes from GitHub](https://www.jetbrains.com/help/idea/sync-with-a-remote-repository.html#fetch).
-1. [Rebase](https://www.jetbrains.com/help/idea/apply-changes-from-one-branch-to-another.html#rebase-branch) your feature branch on the remote branch 'origin/main'.
-1. If your feature branch can't be rebased, instead [merge](https://www.jetbrains.com/help/idea/apply-changes-from-one-branch-to-another.html#merge) the changes from 'origin/main'.
-3. If there are conflicts, [resolve the conflicts](https://www.jetbrains.com/help/idea/resolve-conflicts.html). Be sure to test your changes before committing them.
-4. Test the merged copy. If there are any problems, return to [Work on the issue](#work-on-the-issue) and continue from there.
-5. [Push all changes to GitHub](https://www.jetbrains.com/help/idea/commit-and-push-changes.html#push).
+1. [Merge](https://www.jetbrains.com/help/idea/apply-changes-from-one-branch-to-another.html#merge) the changes from 'origin/main' into your feature branch.
+1. If there are conflicts, [resolve the conflicts](https://www.jetbrains.com/help/idea/resolve-conflicts.html). Be sure to test your changes before committing them.
+1. Test the merged copy. If there are any problems, return to [Work on the issue](#work-on-the-issue) and continue from there.
+1. [Push all changes to GitHub](https://www.jetbrains.com/help/idea/commit-and-push-changes.html#push).
 
 Congratulations, your PR is now up-to-date with the latest changes from upstream. Time to request a review.
 
