@@ -15,8 +15,7 @@ The purpose of this activity is to gain experience with the GitHub workflow with
     - Configure the project;
     - Run it;
     - Open [this shared Google Doc](https://docs.google.com/document/d/1nmXnHzB3lVCibH7GBOUqPDiIjG7x67VOqJcoT3seRwQ/edit?usp=sharing) and record any notes you have on the process so far. _In particular, please record the time at which you finish this step._
-
-If you need help, don't hesitate to ask!
+    - If you need help, don't hesitate to ask!
 
 1. Assign the role of _contributor_ to the other two group members. Your team's goal is to have the _contributors_ work together to add a food you both enjoy. Follow the __Contribution Workflow__ to accomplish this goal. _Maintainer_, when asked to review the PR, accept and merge the PR.
     * [Contribution Workflow](contribution-workflow.md)
