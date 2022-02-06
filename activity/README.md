@@ -6,7 +6,7 @@ The purpose of this activity is to gain experience with the GitHub workflow with
 
 ## Instructions
 
-1. Assign the role of _maintainer_ to one of your group members. They should use this **[GitHub classroom invitation]()** to create a new team and repository for this activity. The other team members should join. 
+1. Assign the role of _maintainer_ to one of your group members. They should use this **[GitHub Classroom invitation](https://classroom.github.com/a/sJDhmJqf)** to create a new team and repository for this activity. The other team members should join. 
 
 1. Each group member should:
 
