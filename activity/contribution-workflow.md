@@ -6,7 +6,7 @@ In this section you will complete three tasks: find or create and claim an issue
 
 Finding or creating and issue and then claiming it helps prevent developers from working on the same thing at the same time. Also issue provide a place for the community to propose and ideas, prioritize issues, size issues, clarify requirements, and verify bugs. So although this step may feel artificial during the activity, it's important to get in the habit of interacting with the community through the issue tracker before doing a significant amount of work.
 
-A branch as a personal copy of the project within a repository. You will create a branch for every issue you work on. This will allow you to work on more than one feature at same time, allowing you to quickly switch between them, while keep their changes separate until you are ready to merge them. This applies to the master branch as well. The master branch contains the official, current copy of the project. Using feature branches allows master to evolve while you work on your features without interfering with your development; and then, when you are ready, you can update your efforts with changes from master. Again, in this activity you might feel branches are artificial and useless. However, when you are working on more significant issues and with more developers branches become invaluable. So we want to practice the full workflow with these more simplistic tasks so that we know what we are doing when things get more complicated.
+A branch is a personal copy of the project within a repository. You will create a branch for every issue you work on. This will allow you to work on more than one feature at same time, allowing you to quickly switch between them, while keep their changes separate until you are ready to merge them. This applies to the master branch as well. The master branch contains the official, current copy of the project. Using feature branches allows master to evolve while you work on your features without interfering with your development; and then, when you are ready, you can update your efforts with changes from master. Again, in this activity you might feel branches are artificial and useless. However, when you are working on more significant issues and with more developers branches become invaluable. So we want to practice the full workflow with these more simplistic tasks so that we know what we are doing when things get more complicated.
 
 Last, you will open an empty pull-request back to the organization's repository (upstream). Pull-requests provide a place for developers to discuss their solution design and implementation. By opening a pull-request immediately, you make your efforts visible from the very beginning, allowing others to track progress and provide useful feedback. Getting feedback early may help you avoid pitfalls and will more likely lead to an acceptable solution sooner and with less effort than if you wait until you are "done" to get feedback.
 
@@ -19,13 +19,12 @@ __Assumptions__
 
 __Instructions__
 
-1. Navigate to your team's repository on GitHub (_not_ your fork).
+1. Navigate to your team's repository on GitHub.
 2. Click the __Issues__ tab.
 3. Search to see if there is an existing issue for what you want to do.
 4. If no reasonable issue exists for what you want to do, create one.
 5. If someone is assigned to the ticket or has claimed it by leaving a comment that they are working on it, move on, or maybe leave a comment asking about the progress and express interest in working on the issue.
 6. If no-one is working on the issue assign yourself to the ticket (or leave a comment that you are working on it).
-7. In your shared editor, note the issue number of the issue you will be working on.
 
 Congratulations, you now have a claimed issue for the work you plan to do.
 
@@ -35,123 +34,70 @@ __Assumptions__
 
 * You are the contributor.
 * You have claimed an issue for the work you plan to do.
-* You have a terminal opened and positioned to the root of your local clone.
 * You are signed into GitHub.
 
 __Instructions__
 
-1. You are going to create a new branch to hold your work. New branches should always be branched from master. So first ensure that the master branch is checked out.
-    ```
-    git checkout master
-    ```
-2. Also you should always make sure that you start your branch based on the most recent copy of master. So let's pull changes from upstream (your team's repository on GitHub). In this activity, there shouldn't be any new changes in upstream, but this is a good habit to get into. So let's practice. At the same time, let's make sure your fork has those changes too.
-    ```
-    git pull upstream master
-    git push origin master
-    ```
-2. Create the feature branch for the issue. Name it something short but meaningful and relevant to the issue. Replace BRANCH_NAME in the command below with your chosen name.
-    ```
-    git branch BRANCH_NAME
-    ```
-3. Checkout the branch you just created. Checking out a branch makes it the active branch so that any new commits you make will be added to this branch.
-    ```
-    git checkout BRANCH_NAME
-    ```
-4. Create an empty commit so that you can immediately issue a pull-request in the steps below. (Alternatively you could make a small change, stage it, and commit it. For now, just create an empty commit.)
-    ```
-    git commit --allow-empty -m "Start BRANCH_NAME"
-    ```
-5. Push your new branch containing the empty commit to your fork. Recall that your clone has a remote named `origin` that points to your fork. At the same time, use `-u` to tell git to track this remote branch with the local branch with the same name. Basically you are telling git that the new remote and local branches mean the same thing. You only use `-u` when you first create and push a branch.
-    ```
-    git push -u origin BRANCH_NAME
-    ```
-6. On GitHub, navigate to _your fork_.
-7. Open a PR by either clicking
-    * __New pull request__ (subtle grey button in the middle) and then the __compare across forks__ link.
-    or
-    * __Compare & pull request__ (big green button on the right)
-8. Make sure that
-    * __base fork__ is set to your team's repository under the organization
-    * __base__ is set to master
-    * __head fork__ is set to your fork of the team's repository
-    * __compare branch__ is set to your feature branch (e.g., BRANCH_NAME)
-9. Click the __Create pull request__ button.
-10. Briefly describe what you plan to do, and mention the issue that this PR is addressing. Mention the issue by putting its issue number in the body using this format: `Closes #i` where `i` is the issue number. When GitHub sees this, it cross-references the issue and the PR allowing folks to easily to get from one to the other. Also, when the PR is merged into master, it will close all issues mentioned this way!
-11. Click __Create pull request__.
+1. First, create a new branch for your work. 
+   * Navigate to your team's repository on GitHub. 
+   * Where it says "main" near the upper left, open the dropdown menu. 
+   * Type the name for your branch and choose "Create branch: BRANCH_NAME from main".
 
-Congratulations! You have created a feature branch to hold the changes you will make while working on the issue. You have also opened a PR for this feature branch back to the upstream repository. This will allow others to follow your progress as you work. Also, the PR is a place where developers can discuss designs and implementations for solutions to issues.
+1. Next, commit your first change to this branch.
+   * Still on GitHub, navigate to a code file where you plan to make changes.
+   * Make sure your new branch is selected.
+   * Write a comment (not code!) noting the issue you plan to address.
+   * Commit your changes. For the commit message, use "Start BRANCH_NAME".
 
+1. Finally, make a pull request (PR).
+   * Still on GitHub, you should now see a big green button that says "Compare & pull request." Click that button.
+   * Edit the PR title and comment. Briefly describe what you plan to do, and mention the issue that this PR is addressing. (You can mention the issue by writing `Closes #i`, where `i` is the issue number. When GitHub sees this, it cross-references the issue and the PR allowing folks to easily to get from one to the other. Also, when the PR is merged into master, it will close all issues mentioned this way!)
+   * Click the big green button labeled "Create pull request."
+
+Congratulations! You have created a feature branch to hold the changes you will make while working on the issue. You have also opened a PR for this feature branch back to the main branch. This will allow others to follow your progress as you work. Also, the PR is a place where developers can discuss designs and implementations for solutions to issues.
 
 ## Work on the issue
 
 __Assumptions__
 
 * You are a contributor.
-* You have a terminal opened and positioned to the root of your local clone.
-* You have the feature branch for the issue checked out.
+* You IntelliJ IDEA open.
 * You have an open PR associated with the feature branch.
 
 __Instructions__
 
-1. Make a small change to the files in your local clone that gets you closer to accomplishing one of your goals (see the activity instructions to remind yourself of what your goals are in this scenario). Use any tools you would normally use to work on a project: e.g., editors such as Atom.io or Notepad++, development environments such as Eclipse, etc.
-2. Test the change to make sure it works. In the activity this probably means reopening the file or files and making sure they have the correct changes. In a real project this means writing and running unit tests, running all the automated tests, manually running the code to see if it still works, running style checkers, etc.
-3. Stage your changes.
-    ```
-    git add .
-    ```
-4. Confirm that only files that should be committed are staged.
-    ```
-    git status
-    ```
-5. If there are files staged that shouldn't be (e.g., anything that can be generated from source, personal/private configurations or data, etc.) complete [Unstage changes](unstage-changes.md). When you are done, return here and continue.
-6. Commit changes and provide a good commit message.
-    ```
-    git commit
-    ```
-7. Push your changes that are in FEATURE_BRANCH to your fork.
-    ```
-    git push origin FEATURE_BRANCH
-    ```
+1. In IDEA, [fetch the new remote branch and check out a local copy](https://www.jetbrains.com/help/idea/manage-branches.html#checkout-Git-branch).
+   * If you are iterating on your work and you have already checked out the feature branch, pull changes from GitHub before you start writing code. There may not be any changes, but it's a good habit to get into.
+3. Make a small change to the files in your local clone that gets you closer to accomplishing one of your goals (see the activity instructions to remind yourself of what your goals are in this scenario).
+4. Test the change to make sure it works. 
+5. [Commit your change to the local repository](https://www.jetbrains.com/help/idea/commit-and-push-changes.html#commit). Provide a concise but informative commit message.
+6. [Push your change to GitHub](https://www.jetbrains.com/help/idea/commit-and-push-changes.html#push).
 
 Congratulations, you have made a change, committed it to your feature branch, and pushed it up to your fork, which automatically updates the PR associated with your feature branch!
 
 * If you are not done working on the issue, return to [Work on the issue](#work-on-the-issue).
 * If you give up, close the PR on GitHub and then go to [Clean up](#clean-up).
-* If you think your work is ready to be upstreamed, continue to the next section.
+* If you think your work is ready to be merged into the main branch, continue to the next section.
 
+## Collaborate to merge your work into the main branch
 
-## Collaborate to upstream your work
-
-### Update your PR with changes in upstream
+### Update your PR with changes to the main branch
 
 __Assumptions__
 
 * You are the contributor.
-* You have a terminal opened and positioned to the root of your local clone.
-* You have a feature branch and a corresponding PR opened back to the upstream repository.
+* You IntelliJ IDEA open.
+* You have a feature branch and a corresponding PR opened back to the main branch.
 
 __Instructions__
 
-1. Synchronize master
-    ```
-    git checkout master
-    git pull upstream master
-    git push origin master
-    ```
-2. Merge changes from master into your feature branch.
-    ```
-    git checkout FEATURE_BRANCH
-    git merge master
-    ```
-3. If there are conflicts, follow GitHub's instructions for [Resolving a merge conflict using the command-line](https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/). Be sure to test your changes before committing them. Return here when you are done.
-4. Test the merged copy. If there are any problems, return to [Work on the issue](#work-on-the-issue) and continue from there.
-5. Update your fork and the PR
-    ```
-    git push origin FEATURE_BRANCH
-    ```
+1. [Fetch changes from GitHub](https://www.jetbrains.com/help/idea/sync-with-a-remote-repository.html#fetch).
+1. [Merge](https://www.jetbrains.com/help/idea/apply-changes-from-one-branch-to-another.html#merge) the changes from 'origin/main' into your feature branch.
+1. If there are conflicts, [resolve the conflicts](https://www.jetbrains.com/help/idea/resolve-conflicts.html). Be sure to test your changes before committing them.
+1. Test the merged copy. If there are any problems, return to [Work on the issue](#work-on-the-issue) and continue from there.
+1. [Push all changes to GitHub](https://www.jetbrains.com/help/idea/commit-and-push-changes.html#push).
 
 Congratulations, your PR is now up-to-date with the latest changes from upstream. Time to request a review.
-
 
 ### Request a review
 
@@ -164,7 +110,7 @@ __Assumptions__
 __Instructions__
 
 1. Navigate to your PR on the team's repository on GitHub.
-2. Make a comment. In that comment at-mention one of your team-members who will play the role of _maintainer_ (e.g., `@person`), and ask them to please review your work.
+2. Make a comment. In that comment at-mention one of your team-members who will play the role of _maintainer_ (e.g., `@username`), and ask them to please review your work.
 3. Click __comment__ (___do not click___ "close and comment").
 
  Closing a PR means that it no longer needs to be merged into upstream. As a _contributor_, you would only do this if you are giving up on your effort. More often a PR is closed by the _maintainer_ either when they merge the PR into master or if they decide the PR should never be merged into master (i.e., the PR is no longer relevant, the PR is outside the scope of the project, the PR has been abandoned, etc.).
@@ -210,20 +156,7 @@ __Assumptions__
 
 __Instructions__
 
-1. Checkout the master branch, update master with changes from upstream, and push those changes to your fork. This synchronizes master across your team's repository, your fork, and your clone.
-    ```
-    git checkout master
-    git pull upstream master
-    git push origin master
-    ```
-2. Delete the feature branch from your local repository.
-    ```
-    git branch -d FEATURE_BRANCH
-    ```
-    Note: if the last statement complains that the branch has not been merged, you may be trying to delete the wrong branch or the maintainer may have used a "merge" strategy that was not a merge at all. So first, check that you have the correct branch and that your pull-request for that branch has actually been merged. If so, and you are really, really, REALLY sure, then force the delete with a capital "D": `git branch -D FEATURE_BRANCH`.
-3. Delete the feature branch from your fork.
-    ```
-    git push -d origin FEATURE_BRANCH
-    ```
+1. Check out the main branch and pull changes from GitHub.
+2. [Delete the feature branch](https://www.jetbrains.com/help/idea/manage-branches.html#delete-branch) from your local repository.
 
 Congratulations, having cleaned up your repositories you have completed this workflow!

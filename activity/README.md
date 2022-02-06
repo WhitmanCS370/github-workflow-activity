@@ -2,55 +2,39 @@
 
 ## Learning goal
 
-The purpose of this activity is to gain experience with the GitHub workflow, including handling pull requests and merge conflicts.
-
-## Form teams of 2-3 persons
-
-We suggest you work with someone who is uses the same operating system as you. 
-
-_Teams are assigned in [this spreadsheet](https://docs.google.com/spreadsheets/d/1vBWP3on0b3NWF_Vso_Qk18I8pmlWPhW2rvgHwR1BD04/edit?usp=sharing)._
+The purpose of this activity is to gain experience with the GitHub workflow with IntelliJ IDEA CE, including handling pull requests and merge conflicts.
 
 ## Instructions
 
-1. (2 minutes) Ensure that each of your team members ...
+1. Assign the role of _maintainer_ to one of your group members. They should use this **[GitHub classroom invitation]()** to create a new team and repository for this activity. The other team members should join. 
 
-    - [ ] Has git installed on their laptop.
-    - [ ] Is logged into their GitHub account on their computer.
+1. Each group member should:
 
-2. (1 minute) Open [this shared Google Doc to take notes](https://docs.google.com/document/d/1nmXnHzB3lVCibH7GBOUqPDiIjG7x67VOqJcoT3seRwQ/edit?usp=sharing).
+    - Run IntelliJ IDEA CE;
+    - Clone the repository for today's assignment;
+    - Configure the project;
+    - Run it;
+    - Open [this shared Google Doc](https://docs.google.com/document/d/1nmXnHzB3lVCibH7GBOUqPDiIjG7x67VOqJcoT3seRwQ/edit?usp=sharing) and record any notes you have on the process so far. _In particular, please record the time at which you finish this step._
+    - If you need help, don't hesitate to ask!
 
-3. (2 minutes) Assign the role of _maintainer_ to one of your team members. They should use this [GitHub classroom invitation](https://classroom.github.com/g/7DYJfpBe) to create a new team and repository for this activity. The other team members should join. **The maintainer should [create a license file](https://docs.github.com/en/github/building-a-strong-community/adding-a-license-to-a-repository) so that the project is not empty and everyone can fork it.**
-
-5. (10 minutes) Assign the role of _contributor_ to one of your team members and help them [Prepare to contribute to a project](prepare-to-contribute-to-a-project.md). Return here when you are done.
-
-6. (2 minutes) Take a moment and reflect on your experience in the previous step. Record in your shared editor any insights you have learned or any questions that you still have. __Get confirmation from Prof Davis before continuing.__
-
-7. (5 minutes) If you were the _contributor_ in the previous step, help your other team members play the role of _contributor_ and complete the previous step __in parallel__.
-
-8. (15 minutes) Assign the role of _maintainer_ to one of your team members, and the role of _contributor_ to another. Your team's goal is to have the _contributor_ create a new file `favorite-foods.txt` in the root of the project containing a couple of their favorite foods. Follow the __Contribution Workflow__ to accomplish this goal. _Maintainer_, when asked to review the PR, accept and merge the PR.
+1. Assign the role of _contributor_ to the other two group members. Your team's goal is to have the _contributors_ work together to add a food you both enjoy. Follow the __Contribution Workflow__ to accomplish this goal. _Maintainer_, when asked to review the PR, accept and merge the PR.
     * [Contribution Workflow](contribution-workflow.md)
 
-9. (5 minutes) Take a moment and reflect on your experience in the previous step. Record in your shared editor any insights you have learned or any questions that you still have. __Get confirmation from Prof Davis before continuing.__
+1. Take a moment and reflect on your experience in the previous step. Record in your shared notes any insights you have learned or any questions that you still have. __Get confirmation from Prof Davis before continuing.__
 
-10. (10 minutes) Reassign the roles of _maintainer_ and _contributor_ to different team members. Your team's goal is to have the _contributor_ add a couple of their favorite foods to `favorite-foods.txt`. Follow the __Contribution Workflow__ to accomplish this goal. ___BUT THIS TIME___, _maintainer_, when asked to review the PR, request an alteration (e.g., "no lettuce please"). Once the change is made, then accept and merge the PR.
+1. Assign the role of _maintainer_ to another group member. The other group members are now _contributors_. Again, they will work together to add a food they both enjoy, following the __Contribution Workflow__.  ___BUT THIS TIME___, _maintainer_, when asked to review the PR, request an alteration (e.g., "no lettuce please"). Once the change is made, then accept and merge the PR.
     * [Contribution Workflow](contribution-workflow.md)
 
-11. (2 minutes) Take a moment and reflect on your experience in the previous step. Record in your shared editor any insights you have learned or any questions that you still have. __Get confirmation from Prof Davis before continuing.__
+1. Assign the role of _maintainer_ to the third group member and repeat the previous step.
 
-12. (10 minutes) This time, everyone is a _contributor_ and a _maintainer_. However, you cannot serve as a _maintainer_ for you own PR. Follow the __Contribution Workflow__ in parallel to accomplish the following:
-    * Add `favorite-movies.txt`
-    * Add `favorite-books.txt`
-    * (if you have three members) Add `favorite-sports.txt`
+1. Take a moment and reflect on your experiences in the previous steps. Record in your shared notes any insights you have learned or any questions that you still have. __Get confirmation from Prof Davis before continuing.__
 
-13. (2 minutes) Take a moment and reflect on your experience in the previous step. Record in your shared editor any insights you have learned or any questions that you still have. __Get confirmation from Prof Davis before continuing.__
+1. Again, everyone plays the roles of a _contributor_ and a _maintainer_, but never serves as a _maintainer_ for their own PR. This time you will try to force a conflict so that you can experience resolving a conflict in the context of the __Contribution Workflow__. Complete the three tasks below in parallel. Note that only the first PR should merge successfully. The others should require resolving conflicts. Tasks:
+    * Add several more favorite foods to the end of the list.
+    * Sort the foods in alphabetical order.
+    * Group the foods into categories preceded by category headers in ALL CAPS.
 
-14. (20 minutes) Again, everyone plays the roles of a _contributor_ and a _maintainer_, but never serves as a _maintainer_ for their own PR. This time you will try to force a conflict so that you can experience resolving a conflict in the context of the __Contribution Workflow__. Complete the three tasks below in parallel. Note that only the first PR should merge successfully. The others should require resolving conflicts. Tasks:
-    * Sort the foods in `favorite-foods.txt` in ascending order.
-    * After each food in `favorite-foods.txt` add one or more labels to categorize the food (e.g., `[vegetable]`, `[fruit]`, `[meat]`, etc.)
-    * (if you have three members) Reformat the list of foods in `favorite-foods.txt` so that every item has a bullet in front (e.g., `*`). If they already have a bullet, change the bullet to a different style of bullet (e.g., `+` or `-`).
-
-15. (5 minutes) Take a moment and reflect on your experience in the previous step. Record in your shared editor any insights you have learned or any questions that you still have. __Check in with Prof Davis before taking your break.__
-
+1. Take a moment and reflect on your experience in the previous step. Record in your shared editor any insights you have learned or any questions that you still have.
 
 
 ## Copyright and Licensing
