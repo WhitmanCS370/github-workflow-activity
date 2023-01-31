@@ -2,17 +2,24 @@
 
 ## Learning goal
 
-The purpose of this activity is to gain experience with the GitHub workflow with IntelliJ IDEA CE, including handling pull requests and merge conflicts.
+The purpose of this activity is to gain experience with the GitHub workflow with IntelliJ IDEA CE, including handling pull requests and merge conflicts. 
+Along the way, you will also set up a SSH keys for use with GitHub.
 
 ## Instructions
 
 1. Assign the role of _maintainer_ to one of your group members. They should use this **[GitHub Classroom invitation](https://classroom.github.com/a/oirEHsxc)** to create a new team and repository for this activity. The other team members should join. 
     - **Do not** change the repository settings on GitHub. The roles of _maintainer_ and _contributor_ should be assigned informally amongst the members of your group.
 
+
 1. Each group member should:
 
+    -  Follow these instructions to connect to GitHub using SSH:
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh.
+
+        - If you are having trouble with your "login keyring", open a terminal and do the following to be allowed to set a new password:
+        - `rm ~/.local/share/keyrings/login.keyring`
     - Run IntelliJ IDEA CE;
-    - Clone the repository for today's assignment;
+    - Clone the repository for today's assignment using the SSH option;
     - Configure the project;
     - Run it;
     - Open [this shared Google Doc](https://docs.google.com/document/d/1nmXnHzB3lVCibH7GBOUqPDiIjG7x67VOqJcoT3seRwQ/edit?usp=sharing) and record any notes you have on the process so far. _In particular, please record the time at which you finish this step._
